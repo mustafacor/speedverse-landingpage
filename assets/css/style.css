@@ -2491,6 +2491,9 @@ footer {
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/localhost\/giner-html\/template\/assets\/scss\/_site\.scss}line{font-family:\00003479}}
 .s-our-mission {
   padding: 140px 0px 150px 0px; }
+  @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/localhost\/giner-html\/template\/assets\/scss\/_site\.scss}line{font-family:\00003479}}
+.s-our-mission.second {
+  padding: 40px 0px 150px 0px !important }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/localhost\/giner-html\/template\/assets\/scss\/_site\.scss}line{font-family:\00003482}}
   .s-our-mission.s-about-speaker .our-mission-img span {
     max-width: 555px; }
@@ -2642,12 +2645,14 @@ footer {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/localhost\/giner-html\/template\/assets\/scss\/_site\.scss}line{font-family:\00003612}}
 .choose-us-item img {
-  max-height: 60px; }
+  max-height: 60px;
+  margin-top: 30px;
+}
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/localhost\/giner-html\/template\/assets\/scss\/_site\.scss}line{font-family:\00003615}}
 .choose-us-item h4 {
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
-  margin: 21px 0; }
+  margin: 11px 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/localhost\/giner-html\/template\/assets\/scss\/_site\.scss}line{font-family:\00003620}}
 .choose-us-item p {
   text-transform: capitalize; }
@@ -8856,3 +8861,32 @@ body.modal {
 .car-image-8{ background-image: url('/assets/img/cars/8.png'); }
 .car-image-9{ background-image: url('/assets/img/cars/9.png'); }
 .car-image-10{ background-image: url('/assets/img/cars/10.png'); }
+
+
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* not phone */
+@media screen and (min-width: 600px) {
+  .flex-md-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.team-name{
+  margin-top: 16px;
+}
+
+.team-img{
+  border: 4px solid #FFD910;
+}
