@@ -8795,7 +8795,7 @@ body.modal {
   width: 100%;
 }
 .car-image{
-   height: 276px;
+   aspect-ratio: 1/1;
    z-index: 1;
    background-position: center;
     background-size: cover;
@@ -8804,6 +8804,9 @@ body.modal {
     transition: all 0.5s ease;
     filter: grayscale(0.4)
 }  
+
+
+
 
 .car-image:hover{
   background-size: 110%;
