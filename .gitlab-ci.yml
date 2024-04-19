@@ -5,7 +5,7 @@ stages:
 deploy:
   stage: deploy
   script:
-    - cp * /web/speedverse.io
+    - cp -r * /web/speedverse.io
   only:
     - master  # 
   tags:
