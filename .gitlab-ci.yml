@@ -1,9 +1,16 @@
 stages:
   - deploy
 
-deploy:
+deploy-prod:
   stage: deploy
-  script:
-    - cp * /web/speedverse.io
+  
   only:
-    - master  # Sadece master branch'e push edildiğinde deploy işlemi yapılacak
+    - master
+  tags:
+    - publish-srv
+  image: docker:latest
+  services:
+    - docker:dind
+  environment: "production"
+  script:
+    - docker run --rm -v $(pwd):/source -v /web/speedverse.io:/target alpine cp -r /source/* /target
