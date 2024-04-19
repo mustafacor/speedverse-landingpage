@@ -8275,6 +8275,8 @@ body.modal {
       top: 25%;
       -webkit-text-stroke: 1px white;
       text-stroke: 1px white; }
+
+    
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/localhost\/giner-html\/template\/assets\/scss\/_site\.scss}line{font-family:\000035595}}
     .marathon-slide .slider-location {
       letter-spacing: 0;
@@ -8889,4 +8891,10 @@ body.modal {
 
 .team-img{
   border: 4px solid #FFD910;
+}
+
+
+
+#slide-2{
+  left: 20px
 }
