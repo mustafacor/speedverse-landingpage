@@ -1,0 +1,9 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - cp * /web/speedverse.io
+  only:
+    - master  # Sadece master branch'e push edildiğinde deploy işlemi yapılacak
