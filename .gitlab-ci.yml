@@ -1,16 +1,12 @@
+
 stages:
   - deploy
 
-deploy-prod:
+deploy:
   stage: deploy
-  
-  only:
-    - master
-  tags:
-    - publish-srv
-  image: docker:latest
-  services:
-    - docker:dind
-  environment: "production"
   script:
-    - docker run --rm -v $(pwd):/source -v /web/speedverse.io:/target alpine cp -r /source/* /target
+    - cp * /web/speedverse.io
+  only:
+    - master  # 
+  tags:
+    - publish-srv # 
